@@ -9,7 +9,7 @@
 </head>
 <body>
 <!-- This example requires Tailwind CSS v2.0+ -->
-<nav class="bg-gray-800 py-3">
+<nav class="bg-gray-800 py-3 fixed top-0 right-0 left-0 ">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -40,7 +40,7 @@
         </div>
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex-shrink-0 flex items-center">
-           <h4 class="text-white font-bold text-xl">Anchal Singh</h4>
+           <h4 class="text-white font-bold text-2xl">Anchal Singh</h4>
           </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
@@ -57,8 +57,9 @@
         </div>
     </div>
   </nav>
-  <section class="flex flex-col justify-center items-center mx-28">
-    <h2 class="text-center text-3xl font-bold my-10">Contact</h2>
+  <h2 class="text-center text-3xl font-bold mt-28">Contact</h2>
+  <section class="flex flex-col justify-center items-center md:flex-row md:max-w-4xl mx-auto ">
+   
     <div class="block p-6 rounded-lg shadow-lg bg-white min-w-full ">
         <form>
           <div class="form-group mb-6">
@@ -68,14 +69,14 @@
               py-1.5
               text-base
               font-normal
-              text-black-700
+              text-gray-700
               bg-white bg-clip-padding
-              border border-solid border-black-300
+              border border-solid border-gray-300
               rounded
               transition
               ease-in-out
               m-0
-              focus:text-black-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
+              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
               placeholder="Name">
           </div>
           <div class="form-group mb-6">
@@ -160,10 +161,12 @@
             active:bg-blue-800 active:shadow-lg
             transition
             duration-150
-            ease-in-out">Send</button>
+            ease-in-out
+            ">Send</button>
         </form>
       </div>
   </section>
+  <!-- https://tailwind-elements.com/docs/standard/forms/form-templates/ -->
   <footer class="text-center bg-gray-900 text-white mt-10">
     <div class="container px-6 pt-6">
       <h1 class="font-bold text-3xl">Anchal Singh</h1>
